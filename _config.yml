@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: '/adithyavj.github.io'
+baseurl: ''
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -26,7 +26,7 @@ description: >-                        # used by seo meta and the atom feed
   Full stack software developer at QBurst.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://adithyavj.github.io'
+url: 'https://blog.adithyavj.in'
 
 github:
   username: adithyavj             # change to your github username
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Adithya Vijay K
-  email: info@adithyavj.com             # change to your email address
+  email: info@adithyavj.in             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/adithyavj      # change to your twitter homepage
@@ -47,13 +47,13 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/adithyavijayk/
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: Sy5H9l1dxaEu6j-SufowIgZA9QHeroCNy4tt8GBXGlM # change to your verification string
 
 # ↑ --------------------------
 
 
 google_analytics:
-  id: ''              # fill in your Google Analytics ID
+  id: 'G-M4MPMMM5BV'              # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -80,7 +80,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/images/photo.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
