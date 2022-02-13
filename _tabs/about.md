@@ -17,5 +17,5 @@ I am a Software Engineer at QBurst, currently working on automated checkout bots
 - Bachelor's in Computer Science, University Of Calicut
 
 ## Reach me at
-- [Website](www.adithyavj.in)
+- [Website](https://www.adithyavj.in/)
 - [LinkedIn](https://www.linkedin.com/in/adithyavijayk/)
