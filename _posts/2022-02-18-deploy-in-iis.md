@@ -3,7 +3,7 @@ title: Deploying a static website to IIS
 author: Adithya Vijay
 date: 2022-02-18 12:41:00 +0800
 categories: [Blogging, deployment]
-tags: [web, development, deployment, iis]     # TAG names should always be lowercase
+tags: [web development deployment iis]     # TAG names should always be lowercase
 ---
 ### Introduction
 Let's discuss on how we can deploy a static website to Microsofts web server IIS (Internet Information Services). Here we will be going thorugh the steps to successfully deploy our website onto IIS.
