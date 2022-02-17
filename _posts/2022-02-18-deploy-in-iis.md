@@ -1,7 +1,7 @@
 ---
 title: Deploying a static website to IIS
 author: Adithya Vijay
-date: 2022-02-18 12:41:00 +0800
+date: 2022-02-18 00:41:00 +0550
 categories: [Blogging, deployment]
 tags: [web development deployment iis]     # TAG names should always be lowercase
 ---
