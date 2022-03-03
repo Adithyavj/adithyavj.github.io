@@ -36,9 +36,9 @@ To get started,
         ```
             docker run --name <container-name> -p 8080:80 <name-of-image-to-run-off-of>
         ```
-        // 8080 - in our system container will run in this port <br/>
+        // 8080 - Container runs in this port locally <br/>
         // 80 - http port in the apache server
-7. Now goto localhost:8081 and we will have our website up and running.
+7. Now goto localhost:8080 and we will have our website up and running.
 
 ### Basic Commands
 
