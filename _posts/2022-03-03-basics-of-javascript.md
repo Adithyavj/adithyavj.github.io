@@ -29,7 +29,7 @@ We can write JavaScript inline in the html document inside a *script* tag in the
 ```
 - From another file
 ```
-<script src="js/app.js"></script>
+'<script src="js/app.js"></script>'
 
 app.js
 console.log('Hello World from another file!');
