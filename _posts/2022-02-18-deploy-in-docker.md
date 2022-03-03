@@ -34,8 +34,10 @@ To get started,
         ```
     - An image is like a read-only image of our application, if we need to run an image, we need a container
         ```
-            docker run --name <container-name> -p 8081:8080 <name-of-image-to-run-off-of>
+            docker run --name <container-name> -p 8080:80 <name-of-image-to-run-off-of>
         ```
+        // 8080 - in our system container will run in this port <br/>
+        // 80 - http port in the apache server
 7. Now goto localhost:8081 and we will have our website up and running.
 
 ### Basic Commands
