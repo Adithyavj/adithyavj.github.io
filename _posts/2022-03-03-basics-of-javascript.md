@@ -129,7 +129,7 @@ if (firstName === 'Bob' && lastName === 'Mc') {
 }
 ```
 
-Difference between == and ===
+- Difference between '==' and '==='
 
 ```
 const x = '1';
@@ -138,7 +138,7 @@ if (x == y) {
     console.log('Two values are equal'); // prints this though the values are not equal.
 }
 if (x === y) {
-    console.log('Two values are equal'); // won't print this
+    console.log('Two values are equal'); // will not print this
 }
 ```
 
