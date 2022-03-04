@@ -118,6 +118,7 @@ console.log(firstLetters);
 
 ### Conditionals
 1. if, else if, else :
+
 ```
 const firstName = 'Bob';
 const lastName = 'Mc';
@@ -127,19 +128,22 @@ if (firstName === 'Bob' && lastName === 'Mc') {
     console.log('Hello student');
 }
 ```
+
 Difference between == and ===
+
 ```
 const x = '1';
 const y = 1;
-
-if (x == y){
+if (x == y) {
     console.log('Two values are equal'); // prints this though the values are not equal.
 }
-if (x === y){
+if (x === y) {
     console.log('Two values are equal'); // won't print this
 }
 ```
+
 2. switch :
+
 ```
 const day = 'Tuesday';
 switch (day) {
@@ -157,6 +161,7 @@ switch (day) {
 
 ### Loops
 1. for
+
 ```
 const people = ['Tim', 'Sue', 'Dan', 'Mary', 'Bob'];
 
@@ -164,7 +169,9 @@ for (let i = 0; i < people.length; i++) {
     console.log(people[i]);
 }  
 ```
+
 2. for of
+
 ```
 const people = ['Tim', 'Sue', 'Dan', 'Mary', 'Bob'];
 
@@ -172,7 +179,9 @@ for (const person of people) {
     console.log(person);
 } 
 ```
+
 3. foreach
+
 ```
 const people = ['Tim', 'Sue', 'Dan', 'Mary', 'Bob'];
 
@@ -180,7 +189,9 @@ people.forEach(function(person){
     console.log(person);
 });
 ```
+
 4. while
+
 ```
 const people = ['Tim', 'Sue', 'Dan', 'Mary', 'Bob'];
 
@@ -188,7 +199,9 @@ while (people.length > 0) {
     console.log(people.pop());
 }
 ```
+
 5. for in
+
 ```
 const person = {
     firstName: 'Tim',
@@ -214,6 +227,7 @@ for (const prop in person) {
 
 ### Functions
 A JavaScript function is a block of code designed to perform a particular task.
+
 ```
 function add(x, y) {
     return x + y;
@@ -221,7 +235,9 @@ function add(x, y) {
 
 console.log(add(1,2)); 
 ```
+
 using default values in function parameters
+
 ```
 function add(x = 2, y = 6) {
     return x + y;
@@ -231,6 +247,7 @@ console.log(add());
 
 ### Arrow Functions
 Subtraction using arrow function
+
 ```
 const subtract = (x, y) => {
     return x - y;
@@ -238,7 +255,9 @@ const subtract = (x, y) => {
 // or
 const subtract = (x, y) => x - y;
 ```
+
 Filtering using arrow function
+
 ```
 const people = ['Tim', 'Sue', 'Dan', 'Mary', 'Bob'];
 
@@ -249,6 +268,7 @@ const filtered = people.filter(p => p.substring(0, 1) === 'T');
 In JavaScript, almost "everything" is an object.
 All JavaScript values, except primitives, are objects. A primitive value is a value that has no properties or methods. A primitive data type is data that has a primitive value. Primitive values are immutable (they are hardcoded and therefore cannot be changed). *if x = 3.14, you can change the value of x. But you cannot change the value of 3.14.*
 **Object values are written as name : value pairs (name and value separated by a colon)**.
+
 ```
 const person = {
     //key:value pairs
@@ -256,7 +276,9 @@ const person = {
     lastName: 'Builder'
 };
 ```
+
 A more complex object with sub objects
+
 ```
 const person = {
     //key:value pairs
@@ -277,9 +299,11 @@ person.address.country = 'USA';
 
 console.log(person.fullName());
 ```
+
 **A JavaScript object is a collection of named values**
 
 Deconstructing objects
+
 ```
 const person = {
     //key:value pairs
@@ -318,6 +342,7 @@ JSON is a format for storing and transporting data. API's transfer data in the f
 **The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only** The JSON format is syntactically identical to the code for creating JavaScript objects.
 JSON names require double quotes. JavaScript names do not.
 Because of this similarity, a JavaScript program can easily convert JSON data into native JavaScript objects.
+
 ```
 const person = {
     firstName: 'Tim',
@@ -336,6 +361,7 @@ const recievedInfo = JSON.stringify(person);
 const parsedInfo = JSON.parse(recievedInfo);
 console.log(parsedInfo.firstName);
 ```
+
 - Converts javascript object to JSON:
 ```JSON.stringify(object)```
 - Converts JSON back to javascript object:
@@ -344,6 +370,7 @@ console.log(parsedInfo.firstName);
 ### Classes
 Classes are blueprints. The instance of a class creates a new object off the blueprint.
 ECMAScript 2015, also known as ES6, introduced JavaScript Classes. JavaScript Classes are templates for JavaScript Objects.
+
 ```
 // class = blueprint, class instance = house
 class Person {
@@ -362,6 +389,7 @@ console.log(person2.firstName);
 
 private fields, get, set
 get, set helps protect our data.
+
 ```
 class Person {
     #social = ''; // private variable, can only be accessed inside the class using get/set
@@ -384,18 +412,22 @@ person1.ssn = '123-45-5789'; // accessing set(){}
 console.log(person1.ssn);
 console.log(person1.getFullName());
 ```
+
 *Note:* [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 ### IIFE (Immediately Invoking Function Expression)
 It is a JavaScript function that runs as soon as it is defined.
 syntax:
+
 ```
 (function () {
   /* ... */
 })();
 ```
+
 *In the syntax the first set of parenthesis () will contain the function and the next set (); will execute the function immediately, which will pass in parameter names.*
 Example: suppose we are using an external library in our project and it has a method with the same name as one of our local methods, this will cause confusion when calling the method by it's name.
+
 ```
 function greetUser() {
     console.log('Hello User');
@@ -407,7 +439,9 @@ function greetUser() {
 
 greetUser(); // This will log: "Welcome to the app" the second function overrides the first one.
 ```
+
 We can solve this by creating an IIFE:
+
 ```
 // IIFE
 // Everything inside this module is inside 'app' namespace
@@ -426,6 +460,7 @@ app.greetUser(); // function is inside the namespace app
 ```
 
 We can also extend an IIFE as follows:
+
 ```
 (function (app) {
     app.greetUser = function () {
@@ -465,6 +500,7 @@ JavaScript has 3 types of scope:
 - Block scope
 - Function scope
 - Global scope
+
 ```
 var a = 4;
 
@@ -478,6 +514,7 @@ console.log(`global: ${a}`); // prints 5
 ```
 
 Now if we do this inside an if block
+
 ```
 var b = 4;
 
@@ -489,6 +526,7 @@ console.log(b); // prints 5, because the whole thing is a single scope for var
 ```
 
 - **If we use *let/const*, they are not scoped at the function level, but at the block level.**
+
 ```
 let b = 4;
 
