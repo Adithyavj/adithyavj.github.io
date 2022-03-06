@@ -33,7 +33,9 @@ console.log(app.complicatedFormula(23));
 console.error('This is an error');
 console.warn('This is an warning');
 ```
+
 We can use log statements and log the values at different steps and thereby find the issue. Using console log in the above test code is demonstrated below.
+
 ```
 (function (app) {
     'use strict';
@@ -63,6 +65,7 @@ To attach the debugger to VSCode:
 - Click on Create a launch.json file
 - In environment select your browser (chrome in our case)
 This will create a new folder .vscode in the root folder with a file named launch.json. The file will be in the following format
+
 ```
 {
     "version": "0.2.0",
@@ -77,5 +80,6 @@ This will create a new folder .vscode in the root folder with a file named launc
     ]
 }
 ```
+
 - Click on the run and debug option, this will pause the website and take you to point where we have added a breakpoint in vscode.
 We can also use the debug console in vscode to observe the values similar to how it's seen in the chrome console tab.
