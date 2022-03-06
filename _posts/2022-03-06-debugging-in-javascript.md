@@ -33,19 +33,20 @@ console.log(app.complicatedFormula(23));
 console.error('This is an error');
 console.warn('This is an warning');
 ```
-We can use log statements and log the values at different steps and thereby find the issue. This is how you debug using console.log's 
+We can use log statements and log the values at different steps and thereby find the issue. Using console log in the above test code is demonstrated below.
 ```
 (function (app) {
     'use strict';
     app.divide = function (x, y) {
+        console.log(x/y);
         return x / y;
     };
     app.complicatedFormula = function (x) {
         let result = x * 3 + 2;
         result += 4;
-        // console.log(result);
+        console.log(result);
         result = this.divide(result, 2);
-        // console.log(result);
+        console.log(result);
         return result;
     }
 })(window.app = window.app || {});
