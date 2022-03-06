@@ -28,14 +28,12 @@ Expected output is 37.5
 
 console.log(app.complicatedFormula(23));
 ```
-1. *Basic Debugging - Using console log, error, and warning*
+1. **Basic Debugging** - (Using console log, error, and warning)
 ```
 console.error('This is an error');
 console.warn('This is an warning');
 ```
-
 We can use log statements and log the values at different steps and thereby find the issue. Using console log in the above test code is demonstrated below.
-
 ```
 (function (app) {
     'use strict';
@@ -56,16 +54,17 @@ We can use log statements and log the values at different steps and thereby find
 console.log(app.complicatedFormula(23));
 ```
 
-2. *Using chrome devtools*
+2. **Using chrome devtools**
+
 We can use the source tab in google chrome dev tools to add breakpoints to the JavaScript file. If we add breakpoint at a certain line, the debugger will pause the website and allow us to inspect the code. We can go line by line and inspect the values of each variables and thereby find the issue/error.
 
-3. *Debugging in VSCode*
+3. **Debugging in VSCode**
+
 To attach the debugger to VSCode:
 - Goto the Run and Debug tab in VSCode
 - Click on Create a launch.json file
 - In environment select your browser (chrome in our case)
 This will create a new folder .vscode in the root folder with a file named launch.json. The file will be in the following format
-
 ```
 {
     "version": "0.2.0",
@@ -80,6 +79,5 @@ This will create a new folder .vscode in the root folder with a file named launc
     ]
 }
 ```
-
 - Click on the run and debug option, this will pause the website and take you to point where we have added a breakpoint in vscode.
 We can also use the debug console in vscode to observe the values similar to how it's seen in the chrome console tab.
