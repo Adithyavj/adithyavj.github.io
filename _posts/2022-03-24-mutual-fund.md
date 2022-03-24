@@ -5,6 +5,7 @@ date: 2022-03-24 20:00:00 +0550
 categories: [Blogging, Stock Market, Personal Finance]
 tags: [stocks mutual funds investing financial]     # TAG names should always be lowercase
 ---
+
 ### Introduction
 Mutual funds are a collection of stocks that are managed by mutual fund managers. The mutual fund manager buys and sells stock out of the portfolio of stocks that he/she has created. In comparison to direct equity investment where we directly go to stock market and purchase the stock of a company, here it is done by the mutual fund managers.
 We can directly invest in mutual funds or through mutual fund agents. We can do SIP (Systematic Investment Plan) or Lump sum (Large amount of money) in mutual funds.
