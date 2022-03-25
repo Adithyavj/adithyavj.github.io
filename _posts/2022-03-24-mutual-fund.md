@@ -3,7 +3,7 @@ title: Mutual Funds
 author: Adithya Vijay
 date: 2022-03-24 20:00:00 +0550
 categories: [Blogging, Stock Market, Personal Finance]
-tags: [stocks mutual funds investing financial]     # TAG names should always be lowercase
+tags: [stocks mutual funds investing financial wealth]     # TAG names should always be lowercase
 ---
 
 ### Introduction
