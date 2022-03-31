@@ -142,3 +142,48 @@ while (listItem !== null){
     listItem = listItem.nextElementSibling;
 }
 ```
+
+### Creating HTML Elements
+We can add elements to the page in many different ways.
+- First Method: This method is a bit slower in performance
+```
+const list = document.getElementById('key-items');
+list.innerHTML += '<li>Our Fourth LI</li>'
+
+const foods = ['Hamburgers', 'Hot Dogs', 'Pasta', 'Bread'];
+const foodList = document.getElementById('good-foods');
+foods.forEach(food => {
+    foodList.innerHTML += `<li>${food}</li>`;
+});
+```
+- Second Method: This is better compared to the first one.
+```
+const foods = ['Hamburgers', 'Hot Dogs', 'Pasta', 'Bread'];
+const foodList = document.getElementById('good-foods');
+foods.forEach(food => {
+    const li = document.createElement('li');
+    li.innerHTML = food;
+    foodList.appendChild(li);
+});
+```
+- Third Method: This one is the most efficient way. Here we create a document fragment and do all manipulations to the fragment and then add it to the page. Here we modify the page only once, when the fragment is added.
+```
+const fragment = new DocumentFragment();
+foods.forEach(food => {
+    const el = document.createElement('li');
+    el.innerHTML = food;
+    fragment.appendChild(el);
+});
+
+foodList.appendChild(fragment);
+```
+
+### Events
+HTML events are "things" that happen to HTML elements.
+An HTML event can be something the browser does, or something a user does.
+
+Here are some examples of HTML events:
+
+- An HTML web page has finished loading
+- An HTML input field was changed
+- An HTML button was clicked
