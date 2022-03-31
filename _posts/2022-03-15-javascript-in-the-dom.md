@@ -95,3 +95,50 @@ paragraphs.forEach(el => {
     el.classList.add('dark-mode')
 });
 ```
+
+### Traversing the DOM
+We generally use getElementById and querySelector to find specific element in the page. They look through the entire body of our page to find the element that we want. Once we find the element we want, if we are looking for an element inside it, in the same level or outside it, we traverse that node we have already found and search inside it.
+We can traverse up/out, down/in, and in the same level from the element that we have currently selected.
+This is much more efficient to traverse the DOM.
+
+- Traversing up/outside
+    We can traverse upper using 'parentElement' or closest('tag-name')
+- Traversing down/inside
+    We can traverse inside using children or querySelector('tag-name')
+- Traversing same level
+    We can traverse the same level using either 'nextElementSibling' or 'previousElementSibling'
+```
+<body>
+    <main>
+        <div id="list-section">
+            <ul id="key-items">
+                <li>Our First LI</li>
+                <li>Our Second LI</li>
+                <li>Our Third LI</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+const section = document.getElementById('list-section');
+const list = section.querySelector('ul');
+const items = list.children;
+const itemsArray = Array.from(items);
+itemsArray.forEach(el => console.log(el));
+
+const section = document.getElementById('key-items');
+const element = section.parentElement;
+const mainElement = section.closest('main')
+console.log(mainElement);
+
+const listItem = document.querySelector('li');
+const nextItem = listItem.nextElementSibling;
+const finalItem = nextItem.nextElementSibling;
+const unknownItem = finalItem.nextElementSibling;
+console.log(unknownItem);
+
+while (listItem !== null){
+    console.log(listItem);
+    listItem = listItem.nextElementSibling;
+}
+```
