@@ -3,19 +3,22 @@ title: Smallcase Investing Explained!
 author: Adithya Vijay
 date: 2022-05-14 16:00:00 +0550
 categories: [Blogging, Stock Market, Personal Finance]
-tags: [stocks small case investing financial wealth]     # TAG names should always be lowercase
+tags: [stocks smallcase investing financial wealth]     # TAG names should always be lowercase
 ---
 
 ### Introduction
 Before getting into smallcase we need to understand the difference between Equity Investing and Portfolio/Basket Investing.
+
 #### Equity Investing
 Equity investing involves buying the stock of a company directly. eg: ITC . However, this needs a lot of market research (which stock to buy, at what price to buy, when to buy etc) We might loose a lot of money here due to lack of knowledge. Direct equity investing is research oriented.
+
 #### Portfolio/Basket Investing
 Buying a basket of stocks. eg:- contains 2,3 stocks. Here, we buy part/the entire basket.  
 
 1. Mutual Funds - There are a wide variety of mutual funds. They are a collection of stocks. A mutual fund has an **NAV** (Net Asset Value). We can buy a part of this basket called a Unit. This is called Unit investing. 
 They are segregated into large cap, mid cap, and small cap. Also into debts (bonds) vs equity(stocks) mutual funds.  
 2. Smallcase - [Smallcase](https://www.smallcase.com) is also a portfolio of stocks. But here we are owning stocks. We don't do unit investing here.  
+
 ### Basics
 Smallcases are a portfolio/basket of stocks wherein we are owning the stocks directly in our demat account. There are a variety of themes of smallcases, thus we can do thematic investing. Here, we don't have to do the heavy lifting as in the case of Equity investing where we have to do a lot of research and spend a lot of time analysing the market.
 
