@@ -164,6 +164,13 @@ After adding the migrations. We can create/update the database by adding/removin
 dotnet ef database update
 ```
 
+3. Droping database
+Incase you want to delete the database.
+
+```
+dotnet ef database drop
+```
+
 ### Creating API Controllers
 1. An API Controller will have an attribute called [APIController]. This signifies that this class is of type apicontroller.
 2. We also need [Route] attribute for this controller. how the user reaches the api controller from the client eg:- [Route("api/[controller]")]
