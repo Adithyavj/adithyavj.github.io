@@ -98,6 +98,13 @@ Our Configuration is injected into the startup class through the constructor [Th
 - ConfigureServices() - It is often referred to as the Dependency Injection container. If we want to make a class or service available to other areas of our application, we can add them inside this container and .NET core will take care of the creation and destruction of these classes.
 - Configure() - This is used to configure the HTTP pipeline. As we make a request from our browser to our controller endpoint, the request goes through a series of middleware on the way in and the way out. The default middlewares used are: redirection, routing, authorization, and the middleware to use the endpoints and map to controllers. It looks inside the controller to see what endpoints are available and map them accordingly.
 
+While adding a service to the ConfigureServices / Dependency injection container, we need to specify it's lifetime ie, how long this service should be alive for after we start it. There are 3 types of lifetimes supported by ASP.NET Core for the dependency injection,
+- Transient Service - When you ask for an instance, always returns a new instance
+- Scoped Service - Whenever you create an instance, it will be created once per user and shared across all requests by that user. User specific scope.
+It is scoped to the lifetime of the http request (in case of API request). This is used mostly with API requests.
+- Singleton Service - Only a single instance is created and will be shared across the application for all users.
+It is created and doesn't stop until the application stops.
+
 3. LaunchSettings.json
 When we run the application using ```dotnet run```, Then it takes a look inside API section in the launchsettings.json to check which url to launch the app.
 We can also use ```dotnet watch run``` to use a filewatcher to examine the filechanges in the terminal.
