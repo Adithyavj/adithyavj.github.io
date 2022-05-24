@@ -41,17 +41,18 @@ This will start the Angular development server and compile the typescript files 
 
 
 ### Angular File Structure
-Angular is a single page application. Our single page is index.html file. It has a tag called `<app-root>` in the body tag. This is an Angular component that will be loaded into our index.html when the app is running. If we inspect the page that is created on running the app, we can see 5 javascript files that were created when we compiled and ran the application. What happens behind the scenes when we run the application is : These js file references get injected into our index.html page by a utility called **web pack**. Angular does this itself.
+Angular is a single page application. Our single page is index.html file. It has a tag called ```<app-root>``` in the body tag. This is an Angular component that will be loaded into our index.html when the app is running. If we inspect the page that is created on running the app, we can see 5 javascript files that were created when we compiled and ran the application. What happens behind the scenes when we run the application is : These js file references get injected into our index.html page by a utility called **web pack**. Angular does this itself.  
+
 1. Component  
 
-`<app-root>` is our app.component file present in the src->app->app.component.ts. This component has a class named AppComponent. It has a decorator `@Component`. Typescript supports decorators. This is a way of giving a normal class extra powers. Here, it gives a class the ability to be and Angular component. This provides configuration meta data that determines how the component should be processed, instantiated, and used at runtime.
+```<app-root>``` is our app.component file present in the src->app->app.component.ts. This component has a class named AppComponent. It has a decorator ```@Component```. Typescript supports decorators. This is a way of giving a normal class extra powers. Here, it gives a class the ability to be and Angular component. This provides configuration meta data that determines how the component should be processed, instantiated, and used at runtime.
 Component is the basics UI building block of an Angular application. Components will provide the data for the view inside the browser.
 Each component has:
 - selector
 - templateUrl
 - styleUrls
 
-Angular components will always create seperate files for the html and css files (to make it more structured). We can pass data from our component.ts to our view component.html. This is done using interpolation `{{title}}`.  
+Angular components will always create seperate files for the html and css files (to make it more structured). We can pass data from our component.ts to our view component.html. This is done using interpolation ```{{title}}```.  
 
 ```
 import { Component } from '@angular/core';
@@ -67,11 +68,11 @@ export class AppComponent {
 ```
 
 How does Angular provide the app.component to the index.html. How is it bootstrapped?
-The browser doesn't know what `<app-root>` tag is and it gets this from the js files.  
+The browser doesn't know what ```<app-root>``` tag is and it gets this from the js files.  
 
 2. Module  
 
-Every Angular application has to have atleast one module. In a standard angular file, it is `app.module.ts` file. Inside it we have a decorator `@NgModule` to tell angular that this is an Angular module. 
+Every Angular application has to have atleast one module. In a standard angular file, it is ```app.module.ts``` file. Inside it we have a decorator ```@NgModule``` to tell angular that this is an Angular module. 
 Angular module file has:
 - declarations
 - imports
@@ -105,9 +106,9 @@ export class AppModule { }
 3. Main.ts  
 
 How is the app.module.ts file bootstrapped?
-The main.ts file has platformbrowserdynamic which is responsible for providing the code to bootstrap our AppModule. Once the AppModule is bootstrapped by the main.ts, it then bootstraps the AppComponent. AppComponent is declared as a selector inside the index.htm as `<app-root>`. 
+The main.ts file has platformbrowserdynamic which is responsible for providing the code to bootstrap our AppModule. Once the AppModule is bootstrapped by the main.ts, it then bootstraps the AppComponent. AppComponent is declared as a selector inside the index.htm as ```<app-root>```. 
 
-Typescript gets it's configuration from `tsconfig.json` file  
+Typescript gets it's configuration from ```tsconfig.json``` file  
 
 4. Angular.json 
 
@@ -127,7 +128,7 @@ When we make an http request to an API, it is an asynchronous request. It will t
 Angular handles asynchronous code using Observables. We have to subscribe to the observable to get the data.
 
 ### Making an http request to the API
-To make an http request from Angular to the .NET Core API, we have to add the `HttpClientModule` to the app.modules.ts. Then add this as a dependency injection to the constructor of the app.component.ts class and use the get method to call the api.
+To make an http request from Angular to the .NET Core API, we have to add the ```HttpClientModule``` to the app.modules.ts. Then add this as a dependency injection to the constructor of the app.component.ts class and use the get method to call the api.
 
 ```
 this.http.get('https://localhost:5001/api/users').subscribe(response => {
@@ -141,7 +142,7 @@ While making this request, we are likely to face the CORS(Cross Origin Resource 
 
 ### Resolving CORS
 CORS is a security mechanism. This is built into all mordern web browsers. It blocks all the http requests from our front-end to any API that is not in the same origin.
-Here API is running at `localhost:5001` and client at `localhost:4200`, thus different origins. We are not allowed to get resources that exists in a different origin unless the resource says that it's okay.
+Here API is running at ```localhost:5001``` and client at ```localhost:4200```, thus different origins. We are not allowed to get resources that exists in a different origin unless the resource says that it's okay.
 
 This can be solved at the API side by adding the following configs in the startup.cs
 
@@ -151,7 +152,7 @@ services.AddCors();
 - in configure part after routing
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200")); - Adds a CORS middleware to your web application pipeline to allow cross domain requests.
 ```
-When this is done, `access-control-allow-origin: http://localhost:4200` is added along with the response headers to the api request and it works.
+When this is done, ```access-control-allow-origin: http://localhost:4200``` is added along with the response headers to the api request and it works.
 
 ### Displaying data in the html page
 To display the users in the html page, we can use the structural directive, loop through the users and list them.
