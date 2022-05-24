@@ -43,7 +43,7 @@ This will start the Angular development server and compile the typescript files 
 ### Angular File Structure
 Angular is a single page application. Our single page is index.html file. It has a tag called ```<app-root>``` in the body tag. This is an Angular component that will be loaded into our index.html when the app is running. If we inspect the page that is created on running the app, we can see 5 javascript files that were created when we compiled and ran the application. What happens behind the scenes when we run the application is : These js file references get injected into our index.html page by a utility called **web pack**. Angular does this itself.  
 
-1. Component  
+- Component  
 
 ```<app-root>``` is our app.component file present in the src->app->app.component.ts. This component has a class named AppComponent. It has a decorator ```@Component```. Typescript supports decorators. This is a way of giving a normal class extra powers. Here, it gives a class the ability to be and Angular component. This provides configuration meta data that determines how the component should be processed, instantiated, and used at runtime.
 Component is the basics UI building block of an Angular application. Components will provide the data for the view inside the browser.
@@ -52,7 +52,11 @@ Each component has:
 - templateUrl
 - styleUrls
 
-Angular components will always create seperate files for the html and css files (to make it more structured). We can pass data from our component.ts to our view component.html. This is done using interpolation ```{{title}}```.  
+Angular components will always create seperate files for the html and css files (to make it more structured). We can pass data from our component.ts to our view component.html. This is done using interpolation  
+
+```
+{{title}}
+```
 
 ```
 import { Component } from '@angular/core';
@@ -70,7 +74,7 @@ export class AppComponent {
 How does Angular provide the app.component to the index.html. How is it bootstrapped?
 The browser doesn't know what ```<app-root>``` tag is and it gets this from the js files.  
 
-2. Module  
+- Module  
 
 Every Angular application has to have atleast one module. In a standard angular file, it is ```app.module.ts``` file. Inside it we have a decorator ```@NgModule``` to tell angular that this is an Angular module. 
 Angular module file has:
@@ -103,14 +107,14 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```  
 
-3. Main.ts  
+- Main.ts  
 
 How is the app.module.ts file bootstrapped?
 The main.ts file has platformbrowserdynamic which is responsible for providing the code to bootstrap our AppModule. Once the AppModule is bootstrapped by the main.ts, it then bootstraps the AppComponent. AppComponent is declared as a selector inside the index.htm as ```<app-root>```. 
 
 Typescript gets it's configuration from ```tsconfig.json``` file  
 
-4. Angular.json 
+- Angular.json 
 
 It provides necessary configurations to angular cli. We provide extra scripts, styles to our app in this file. While building the app, the builder looks at this file to find the entry point of the application which is main.ts which bootstraps AppModule.
 
