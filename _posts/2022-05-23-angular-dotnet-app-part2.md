@@ -7,7 +7,7 @@ tags: [development programming dotnet6 angular12]     # TAG names should always 
 ---
 
 ### Introduction
-In this blog, we'll be looking at how to build the structure of an application with .NET 6 as the backend and Angular 12 as the frontend. This is the second part of the blog where we'll be creating the Angular 12 application. Please read part one of the blog [here](https://blog.adithyavj.in/posts/angular-dotnet-app/) on how to create the .NET 6 API.
+In this blog, we'll be looking at how to build the structure of an application with .NET 6 as the backend and Angular 12 as the frontend. This is the second part of the blog where we'll be creating the Angular 12 application. Please read part one of the blog [here](https://blog.adithyavj.in/posts/angular-dotnet-app-part1/) on how to create the .NET 6 API.
 
 ### Versions
 Angular has a major release every 6 months. The current lastest version when writing this blog is Angular 13. However we will be creating our application using Angular 12. To run Angular 12 install nodejs version greater than 16.10.
@@ -37,26 +37,24 @@ To run the Angular application, cd into the directory containing the angular app
 ng serve
 ```
 
-This will start the Angular development server and compile the typescript files in the application into javascript and serve the js files from memory (the complied js files are not physical files, they are stored in memory). 
+This will start the Angular development server and compile the typescript files into javascript and serve the js files from memory (the complied js files are not physical files, they are stored in memory). 
 
 
 ### Angular File Structure
 Angular is a single page application. Our single page is index.html file. It has a tag called ```<app-root>``` in the body tag. This is an Angular component that will be loaded into our index.html when the app is running. If we inspect the page that is created on running the app, we can see 5 javascript files that were created when we compiled and ran the application. What happens behind the scenes when we run the application is : These js file references get injected into our index.html page by a utility called **web pack**. Angular does this itself.  
 
+> **Web Pack** - Webpack is a popular module bundler, a tool for bundling application source code in convenient chunks and for loading that code from a server into a browser.
+
 - Component  
 
-```<app-root>``` is our app.component file present in the src->app->app.component.ts. This component has a class named AppComponent. It has a decorator ```@Component```. Typescript supports decorators. This is a way of giving a normal class extra powers. Here, it gives a class the ability to be and Angular component. This provides configuration meta data that determines how the component should be processed, instantiated, and used at runtime.
+```<app-root>``` is our app.component file present in the src->app->app.component.ts. This component has a class named AppComponent. It has a decorator ```@Component```. Typescript supports decorators. This is a way of giving a normal class extra powers. Here, it gives a class the ability to be an Angular component. This provides configuration meta data that determines how the component should be processed, instantiated, and used at runtime.
 Component is the basics UI building block of an Angular application. Components will provide the data for the view inside the browser.
 Each component has:
 - selector
 - templateUrl
 - styleUrls
 
-Angular components will always create seperate files for the html and css files (to make it more structured). We can pass data from our component.ts to our view component.html. This is done using interpolation  
-
-```
-{{title}}
-```
+Angular components will always create seperate files for the html and css files (to make it more structured). We can pass data from our component.ts to our view component.html. This is done using interpolation ```{{title}}```
 
 ```
 import { Component } from '@angular/core';
@@ -71,17 +69,19 @@ export class AppComponent {
 }
 ```
 
-How does Angular provide the app.component to the index.html. How is it bootstrapped?
+How does Angular provide the app.component to the index.html. How is it bootstrapped?  
+
 The browser doesn't know what ```<app-root>``` tag is and it gets this from the js files.  
 
 - Module  
 
-Every Angular application has to have atleast one module. In a standard angular file, it is ```app.module.ts``` file. Inside it we have a decorator ```@NgModule``` to tell angular that this is an Angular module. 
+Every Angular application should have atleast one module. In a standard angular file, it is ```app.module.ts``` file. Inside it we have a decorator ```@NgModule``` to tell angular that this is an Angular module. 
 Angular module file has:
 - declarations
 - imports
 - providers
-- bootstrap
+- bootstrap  
+
 The module file declares the components that are available in our application. They will be in the declaration array.
 We can import other angular modules into the app.module in the imports array.
 We also have a bootstrap element to bootstrap any components when our application loads. The AppComponent is bootstrapped when the module file app.module.ts is bootstrapped. The AppComponent file is the one we see in the index.html file.  
@@ -110,7 +110,7 @@ export class AppModule { }
 - Main.ts  
 
 How is the app.module.ts file bootstrapped?
-The main.ts file has platformbrowserdynamic which is responsible for providing the code to bootstrap our AppModule. Once the AppModule is bootstrapped by the main.ts, it then bootstraps the AppComponent. AppComponent is declared as a selector inside the index.htm as ```<app-root>```. 
+The main.ts file has platformbrowserdynamic which is responsible for providing the code to bootstrap our AppModule. Once the AppModule is bootstrapped by the main.ts, it then bootstraps the AppComponent. AppComponent is called in index.html with the selector ```<app-root>```. 
 
 Typescript gets it's configuration from ```tsconfig.json``` file  
 

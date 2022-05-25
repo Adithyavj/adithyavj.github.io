@@ -16,13 +16,13 @@ We have to install the following softwares:
 3. Visual Studio Code
 4. Postman  
 
-The first step is to download and install [.NET 6](https://dotnet.microsoft.com/en-us/download) latest release
-As we are using typescript and Angular in the frontend, we need a javascript engine that allows us to run our javascript application. It is also used to compile our typescript that we use to write the Angular code into javascript. Thus, we also need to insall [Node.js](https://nodejs.org/en/)
+The first step is to download and install [.NET 6](https://dotnet.microsoft.com/en-us/download) latest release. 
+As we are using typescript and Angular in the frontend, we need a javascript engine that allows us to run our javascript application. It is also used to compile our typescript that we use to write the Angular code into javascript. Thus, we also need to insall [Node.js](https://nodejs.org/en/).
 We can use Visual Studio Code as the IDE to code the application. It can be used to write both the Angular and .NET Code.
 We use [Postman](https://www.postman.com/downloads/) for API Testing.
 
 ### Building the Walking Skeleton
-A Walking Skeleton is a tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components.  
+A walking skeleton is a tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components.  
 
 The architecture and the functionality can then evolve in parallel.  
 
@@ -85,15 +85,15 @@ dotnet dev-certs https --trust
 
 **How it works** (A bit technical)  
 
-1. Program.cs  
+1. Program.cs
 
 Every .NET application has a *program.cs* class. Within this class is the Main method. When the dotnet run command is executed, it looks for the main method and executes any of the code inside this method. The main method calls another method inside the program class called CreateHostBuilder. This method Uses Host.CreateDefaultBuilder method which initialises a new instance of HostBuilder with pre-configured defaults. It sets the root-path: where to get files that are part of our project. It loads the configuration. It sets up logging, and returns an IHostbuilder. It also points to use the *startup.cs* class.  
 
-2. Startup.cs  
+2. Startup.cs
 
 The startup class has a constructor, ConfigureServices(), and Configure() methods.
 
-Our Configuration is injected into the startup class through the constructor [This means the configuration provided in the files like appsettings.json, appsettings.development.json, userSecrets etc]
+- Constructor - configuration is injected into the startup class through the constructor [This means the configuration provided in the files like appsettings.json, appsettings.development.json, userSecrets etc]
 
 - ConfigureServices() - It is often referred to as the Dependency Injection container. If we want to make a class or service available to other areas of our application, we can add them inside this container and .NET core will take care of the creation and destruction of these classes.
 - Configure() - This is used to configure the HTTP pipeline. As we make a request from our browser to our controller endpoint, the request goes through a series of middleware on the way in and the way out. The default middlewares used are: redirection, routing, authorization, and the middleware to use the endpoints and map to controllers. It looks inside the controller to see what endpoints are available and map them accordingly.
@@ -106,6 +106,7 @@ It is scoped to the lifetime of the http request (in case of API request). This 
 It is created and doesn't stop until the application stops.
 
 3. LaunchSettings.json
+
 When we run the application using ```dotnet run```, Then it takes a look inside API section in the launchsettings.json to check which url to launch the app.
 We can also use ```dotnet watch run``` to use a filewatcher to examine the filechanges in the terminal.
 
@@ -155,7 +156,7 @@ To manage the db ie, create database and tables via EF, we need to install a too
 ```
 dotnet tool install --global dotnet-ef --version 6.0.0
 ```
-1. Adding migration
+- Adding migration
 Creating a migration based on the code we have written (the entities and datacontext)
 This will create a database schema / code to create our database.
 
@@ -164,14 +165,14 @@ dotnet ef migrations add InitialCreate -o Data/Migrations
 ```
 The migration will add Up and Down methods.
 
-2. Updating database
+- Updating database
 After adding the migrations. We can create/update the database by adding/removing the tables.
 
 ```
 dotnet ef database update
 ```
 
-3. Droping database
+- Droping database
 Incase you want to delete the database.
 
 ```
