@@ -11,13 +11,13 @@ In this blog, we'll discuss about how we'll store passwords in a database, the b
 
 ### How to Store passwords in a database
 Password can be saved in different ways :
-- Storing in clear text - Never save password a clear text
-- Hashing the password - Apply a hashing algorithm to the password and storing the passwordhash in the database. You can't calculate what the password is from the hash. However, if there are 2 people with the same password then the hashes of both these passwords will be the same. If the db is compromised, the hacker can identify that both passwords are same and can be hacked easily.
+- Storing in clear text - Never save password in clear text
+- Hashing the password - Apply a hashing algorithm to the password and storing the passwordhash in the database. You can't calculate what the password is from the hash. However, if there are 2 people with the same password then the hashes of both these passwords will be the same. If the db is compromised, the hacker can identify that both passwords are same and decrypt them via the dictionary of hashes that have already been decrypted.
 - Hashing and salting the password - A salt applied to a hashing algorithm will scramble the hash. So even if 2 passwords are the same, the password hash created will be different. We also have to store the password salt in the database to decode the hash (unscramble the hash).
 Simple basics authentication is implemented using password hash and salt. This is similar to the method followed in ASP.NET Identity however, it's not as battle hardened as Identity.
 
 ### JWT Token Authentication
-An API is not something that we maintain a session state with. We make a request to an API, it returns the data we asked for and that ends the relationship with the API. Tokens are good to use with an API, they are small enough to end with each request.
+An API is not something that we maintain a session state with. We make a request to an API, it returns the data we asked for and that ends the relationship with the API. Tokens are good to use with an API, they are small enough to send with each request.
 JWT is an industry standard for tokens. They are self contained and can contain credentials, claims, and other information.
 JWT has 3 parts each seperated by a '.' period
 1. Header - It contains the algorithm and token type. The algorithm is used to encrypt the signature. The type of the token will be JWT
@@ -106,7 +106,7 @@ services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     };
                 });
 ```
-After adding this, we also need to add the useAuthorization() middleware in configure method before useAuthentication() middleware
+After adding this, we need to add the useAuthorization() middleware after useAuthentication() in the configure method.
 To allow only authorized users to access an endpoint, we use the Authorize attribute on the particular method.
 
-Now to access the endpoint, we need to send the JWT token in the authorization header along with the request headers in the format ``` Bearer <jwtToken> ```
+Now to access the endpoint, we need to send the JWT token in the authorization header along with the request headers in the format ``` Bearer <jwtToken> ```.
