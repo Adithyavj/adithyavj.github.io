@@ -457,7 +457,8 @@ Combining network security solutions
 
 ### Azure Identity Services  
 
-#### Authentication vs Authorization
+#### Authentication vs Authorization  
+
 | Authentication                                                               | Authorization                                                                            |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | Identifies the person or service seeking access to a resource (username,pwd) | Determines an authenticated person's or service's level of access (Permission they have) |
@@ -542,9 +543,11 @@ It is the Microsoft approach to implementing Azure.
 
 Security, privacy and compliance are the foundation of everything done in Microsoft.
 
-**1. Security**: Secure by design. Built in intelligent security, Microsoft helps to protect against known and unknown cyberthreats, using automation and AI.
-**2. Privacy**: Committed to ensuring the privacy of organizations through contractual agreements, and by providing user control and transparency.
-**3. Compliance**: We respect local laws and regulations and provide comprehensive coverage of compliance offerings.
+**1. Security**: Secure by design. Built in intelligent security, Microsoft helps to protect against known and unknown cyberthreats, using automation and AI.  
+
+**2. Privacy**: Committed to ensuring the privacy of organizations through contractual agreements, and by providing user control and transparency.  
+
+**3. Compliance**: We respect local laws and regulations and provide comprehensive coverage of compliance offerings.  
 
 #### Compliance Terms and Requirements
 Azure provides most comprehensive set of compliance offerings (including certifications and attestations) of any cloud service provider. Some of the compliance offering include:
@@ -587,24 +590,30 @@ Microsoft is China's first foreign public cloud service provider, in compliance 
 There are 6 primary factors affecting costs:
 Resouce type, services and location have definite direct impact on cost
 
-1. Resource Type
+1. Resource Type  
+
 Costs are resource-specific, so the usage that a meter tracks and the no. of meters associated with a resource, depend on the resource type.
 
-2. Services
+2. Services  
+
 Azure usage rates and billing periods can differ between Enterprise, Web Direct, and CSP(Cloud solution providers) customers. If third party is managing our Azure, we have to pay their cost also.
 
-3. Location
+3. Location  
+
 The Azure infrastructure is globally distributed, and usage costs might vary between locations that offer Azure products, services, and resources
 eg: Switzerland costs more to run a data center there. So cost here is high. East US is low.
 
-4. Bandwidth
+4. Bandwidth  
+
 Depending on how data transfers are going, there is billing by zone. Different geographies are organized into Zones. Weather or not you have outbound or inbound data transfers outside your Zone, there can be additional charges.
 eg:- West US --> Australia (will cost outbound changes)
 
-5. Reserved Instances
+5. Reserved Instances  
+
 With this we can save money. Reserving resources for one or three year plans can help reduce resource costs upto 72% on pay-as-you-go prices.
 
-6. Azure Hybrid Use Benefit
+6. Azure Hybrid Use Benefit  
+
 This allows to use on-premises licenses on Azure at a reduced cost. We can bring licenses from on-premise to Azure.
 
 #### Pricing Calculator
