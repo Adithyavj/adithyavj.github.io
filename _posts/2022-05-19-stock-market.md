@@ -62,3 +62,19 @@ Here, we will discuss what we have to do when we want to buy/sell a stock. We al
 - Side - Buy/Sell order
 - Type - Market order, Limit order. Market order tells a broker that you want to buy/sell the stock immediately no matter the price. Limit order tells a broker you want to buy/sell the stock at a limit price or better. Market order is time sensitive while limit order is price sensitive. In case of a limit order, we need to provide a price to your order.
 - Quantity - No. of shares to buy/sell
+
+### Order Driving Prices
+Most people think that it's news or events that make prices move, but the actual thing that drives prices is orders that people send. 
+> Shares outstanding refers to the amount of shares that your company has.  
+> Floats: The amount of shares that are currently trading in the market.
+
+- **Level 2/Book**: Represents every single buyer and seller that's out on the market. From the book or level 2 we create level 1. In level 2, the orders on the buy side are placed according to a price priority and then time priority. The order with the highest price is placed on top of the buy side and the one with lowest price is placed at the top of the sell side. If two orders have the same price, then the one which came first will be on top. Level 2 updates everytime a new order is placed. The order at the top of level 2 buy part is the best ask and the one at the top of it's sell part is the best bid. *Electronic list of buy and sell orders for a stock. This list is ordered by price and then by time. The order book lists the number of shares on the bid and ask at every price point*.  
+- **Level 1**: It is the best price/bid/offer available on the market. It is updated everytime the best ask/best bid in the level 2 gets updated. Level 1 is an abbreviation for level 2 and Time and Sales. It contains the best ask/bid from level 2 and the last price from Time and Sales. It will give us a general idea of the market. *Displays the bid and ask prices as well as quantities. This also displays the last trade executed*.  
+- **Time and Sales**: This is where the exchange records everything. The exchange has to report on every execution that happens. On it they have to put the name of the stock that they are trading, the time that the trade happened at, the quantity and the price that it happened at. This comes out at the time of sales. The last price at which the stock was executed at is the LTP and will be shown while checking for the price of the stock. *Displays every single execution that happens on the market. The executions are displayed real-time and include information like: time, direction, quantity traded and exchange traded on*.  
+
+**Supply and demand** is shown through the order book that you can access at level 2, see all the buyers and all the sellers and the price will fluctuate based solely on the orders that people send. The price movement comes from the order matching with one another on the execution system/the matching system at the stock exchange.
+
+- Bid: The best price you can buy on.  
+- Ask: The best price you can sell on.  
+- Spread: Difference between ask and bid. The difference between the price of best person who wants to buy and the person who wants to sell. If a stock has an ask of 52 and a bid of 50 and we want to buy it, we can buy it at 52$ and if we sell it next we will sell it at 50$. Thus loosing 2$ in the process even though the stock hasn't moved.  The 2$ is spread. While trading we have to watch out for the spread of a stock.
+- NBBO (National Best Bid and Offer): This represents the highest bid and lowest ask available on the market
