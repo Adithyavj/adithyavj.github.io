@@ -77,4 +77,19 @@ Most people think that it's news or events that make prices move, but the actual
 - Bid: The best price you can buy on.  
 - Ask: The best price you can sell on.  
 - Spread: Difference between ask and bid. The difference between the price of best person who wants to buy and the person who wants to sell. If a stock has an ask of 52 and a bid of 50 and we want to buy it, we can buy it at 52$ and if we sell it next we will sell it at 50$. Thus loosing 2$ in the process even though the stock hasn't moved.  The 2$ is spread. While trading we have to watch out for the spread of a stock.
-- NBBO (National Best Bid and Offer): This represents the highest bid and lowest ask available on the market
+- NBBO (National Best Bid and Offer): This represents the highest bid and lowest ask available on the market.
+
+### Different Players
+Different players in the market trade differently. A mutual fund or somebody who has a lot of shares is not going to trade like somebody who is just sitting at home and trading ie, a retail trader. A mutual fund will sell when there's a good news since then, a lot of buyers will be there. We have to know the institutional ownership of a stock. We need to know who we are trading against. At the end of the day, day-trade is a zero sum game meaning every dollar that we take into our pocket comes from somebody elses pocket. So, we need to know the person we're taking money from. Prices are going to move because of the buy orders and sell orders that people/participants are sending so we have to know who those participants are. Because they send orders in a different type of manner.
+The different players are:
+- Proprietary Trading Firms (Have lots of tools, information, access and strategies)
+- Investors (They invest for a long term)
+- Retail Traders (Traders trading from home without sophisticated tools, information or strategies)
+- Portfolio Managers (Mutual fund managers - Take money from lot of investors and trade using it)
+- Hedge Funds - Like mutual funds, they have big capital and not anyone can put money in a hedge fund. You have to be someone who's rich enough as they have a minimun investment amount. They are more sophisticated than mutual funds and outperform them. They are very discrete (We can't know what they are doing.)
+
+### 3 ways of making money in Stock Market
+1. Going Long - Buying a stock and selling it at a higher valuation to make money.
+2. Going Short - Betting that a stock is gonna go down. We make money when stock drops in value. We can short stocks in a margin account. Here we borrow stocks from a broker, then sell it and after it goes down buy it back, take the difference as profit and give back the stock to the broker.
+3. Being Flat - Being flat means having no positions. If you're busy then don't trade, this is a good position to be in.
+
