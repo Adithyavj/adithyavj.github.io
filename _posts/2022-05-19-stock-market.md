@@ -93,3 +93,23 @@ The different players are:
 2. Going Short - Betting that a stock is gonna go down. We make money when stock drops in value. We can short stocks in a margin account. Here we borrow stocks from a broker, then sell it and after it goes down buy it back, take the difference as profit and give back the stock to the broker.
 3. Being Flat - Being flat means having no positions. If you're busy then don't trade, this is a good position to be in.
 
+### Introduction to Technical Analysis
+We have two ways to try and predict where stock prices are going to go. These two are:
+- Fundamental Analysis (Evaluating the stock fundamentally - how many employees, tax system, environment, revenue, expenses, debt) - Used for long term investing
+- Technical Analysis (We only check Price and Volume of shares being traded) - Used for trading (Day trading, swing trading)  
+
+### Charts & Candlesticks
+**Chart** - Charts are just a graphical representations of past price action. Chart is the prices that a product traded at each point in time. When looking at a chart, we are observing historical prices of a stock. Prices going up indicates that the demand for the stock was higher than it's supply. If prices are going down, it mean more people wanted to sell that product and less people wanted to buy it. Traders use charts to predict where the stock go in the future based on how it moved in the past.
+1. Line Charts
+It connects every price point throughout time with a line. Line charts aren't sufficient enough to get a full picture of what actually happend. That's why almost always we use candlestick charts.
+2. Candlestock Charts
+Candlestick is something we draw for each day. A candlestick shows opening price, close price, high price, and low price during a day. In the US and Canadian markets, the market opens at 9:30am, the first trade that happens when the market opens is the opening price. If the first trade happens at 10$, it is the opening price. If the stock price then goes down to 9$, then goes up to 13$ and closes at 12$. Close is the last trade that happend during the day. ie, at 4pm when the market closes. The highest price that the stock traded during the day here 13$ is the high price and the lowest price that the stock traded in during the day 9$ is the low price. By connecting these prices we form a candle. By looking at this candle, it's top shows the high price, bottom show low price. If a candle is drawn in green, it means it's price went up today. It opened at 10$ went down to 9$ but closed at 12$. So in effect it went up by 2$ or 20%. Another example is a stock opened at 10$, went up to 12$, then went down to 6$ and closed at 8$. So here the candlestick will be red color and the price went down by 2$ or 20%.
+
+<img src="../images/candlestick.PNG" width="300" height="300">
+
+All candles are composed of an upper shadow, lower shadow, open, close, high, and low.  
+If the open is higher than the close we have a red.  
+If the close is higher than the open we have a green.  
+
+### CandleSticks
+
