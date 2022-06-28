@@ -105,11 +105,36 @@ It connects every price point throughout time with a line. Line charts aren't su
 2. Candlestock Charts
 Candlestick is something we draw for each day. A candlestick shows opening price, close price, high price, and low price during a day. In the US and Canadian markets, the market opens at 9:30am, the first trade that happens when the market opens is the opening price. If the first trade happens at 10$, it is the opening price. If the stock price then goes down to 9$, then goes up to 13$ and closes at 12$. Close is the last trade that happend during the day. ie, at 4pm when the market closes. The highest price that the stock traded during the day here 13$ is the high price and the lowest price that the stock traded in during the day 9$ is the low price. By connecting these prices we form a candle. By looking at this candle, it's top shows the high price, bottom show low price. If a candle is drawn in green, it means it's price went up today. It opened at 10$ went down to 9$ but closed at 12$. So in effect it went up by 2$ or 20%. Another example is a stock opened at 10$, went up to 12$, then went down to 6$ and closed at 8$. So here the candlestick will be red color and the price went down by 2$ or 20%.
 
-<img src="../images/candlestick.PNG" width="300" height="300">
+<img src="https://raw.githubusercontent.com/Adithyavj/adithyavj.github.io/gh-pages/images/candlestick.PNG" width="300" height="300">
 
 All candles are composed of an upper shadow, lower shadow, open, close, high, and low.  
 If the open is higher than the close we have a red.  
 If the close is higher than the open we have a green.  
 
 ### CandleSticks
+A graphical representation of the high, low, opening and closing price of a security for a specific period. A green Real Body represents a stock that closed at a higher price than it opened at. A red Real Body represents a stock that closed at a price lower than it opened at. A candlestick can be for any period of time. It can be for a day, a week, for 5 minutes etc. We can have candles for any timeframes. Different candles mean different things.
+The different candlesticks are:
+1. Big Candles  
+As the name suggests, a big candle is a candle of a large size. It indicates that the prices either went down a lot or went up a lot. A bigger candle means a bigger imbalance between how many buyers there were and how many sellers.
+2. Dojis Candles  
+Doji means indecision. Dojis form when the opening and closing prices are virtually equal. Alone, dojis are neutral patterns. It opens at a price say 10$, then goes up to 14$, then goes down to 8$ they goes up to 10$. It's opening and closing prices are the same ie, 10$. This indicates indecision of where the stock should go. Neither buyer nor seller wins here.
+3. Long Legger Doji Candles  
+A Doji with a bigger wick (Wick referes to the high and low on a candle). It means buyers were winning by a bigger amount at one point but then sellers were winning by a bigger amount. But at the end of the day/period, the closing price of the stock is the same as the opening. Which means there is big indecision about where the stock is going.
+4. GraveStone Candles  
+Here the stock goes all the way up to a certain point meaning there are a lot of buyers (Strong demand) but then it stops and sellers start selling and the price drops all the way to where it opened at. The long upper shadow suggests that the direction of the trend may be nearing a major turning point. It is formed when the opening and closing price of the underlying asset are equal and occur at the low of the day. 
+5. DragonFly Candles  
+Here the stock opens at a price, drops then comes back to the opening price and closes there. The long lower shadow suggests that the direction of the trend may be nearing a major turning point. It is formed when the opening and closing price of the underlying asset are equal and occur at the high of the day. 
+6. Morning Doji Star  
+Morning Doji Star Consists of a large red body candlestick followed by a Doji that occurred below the preceding candlestick. On the following day, a third green body candlestick is formed that closed well into the red body candlestick which appeared before the Doji. It is considered as a major reversal signal. Indicates a bullish trend.
+Stock goes down with red candlestick until it reaches a doji indicating an indecision, then next candle is a green one. This forms a reverse signal indicating that it may go up subsequently. Dojis make sense when put within a pattern. We can us the morning doji star pattern to time the buying of a stock. If it forms the morning star pattern, we know it will go up eventually so we can time it here and buy it.
+7. Evening Doji Star  
+Evening Doji Star Consists of three candlesticks. First is a large green body candlestick followed by a Doji that gap above the green body. The third candlestick is a red body that closes well into the green body. When it appears at the top it is considered as a reversal signal. It signals a bearish trend.
+8. Shooting Star  
+Here the stock opens at a certain price, goes all the way up and come down and closes just above where it opened. It will have a small green candle. A black or a white candlestick that has a small body, a long upper shadow and a little or no lower tail. Considered a bearish pattern in an uptrend.
+8. Hammer  
+Here the stock opens at a certian price, goes all the way down and come up and closes just below where it opened. It will have a small red candle. A black or a white candlestick that consists of a small body near the high with a little or no upper shadow and a long lower tail. Considered a bullish pattern during a downtrend.
+9. Bearish Harami  
+Here we have a very big green candle and then a smaller red candle that opens within the body(within open and close of the candle) of the green candle. In a chart this indicatest that the up movement has exhaused. So, we expect a trend reveral ie, the stock to go down. As the name bearish suggests we have a view that the stock will go down.
+10. Bullish Harami  
+Here we have a very big red candle and then a smaller green candle that opens within the body(within open and close of the candle) of the red candle. 
 
