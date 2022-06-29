@@ -1,7 +1,7 @@
 ---
 title: Stock Market Crash of 2008
 author: Adithya Vijay
-date: 2022-06-29 20:00:00 +0550
+date: 2022-06-29 17:00:00 +0550
 categories: [Blogging, Stock Market, Personal Finance]
 tags: [stocks investing financial wealth]     # TAG names should always be lowercase
 ---
