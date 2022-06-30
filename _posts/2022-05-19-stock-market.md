@@ -42,7 +42,7 @@ Selling stocks from your company to the public for the first time ever. The publ
 An underwriting firm will analyse our company and figure out the best price at which our stock can be sold at the beginning. They help us get the required amount of money by
 selling the decided amount of stocks. The first selling of these stocks/shares will happen in the primary market. It is very hard to get shares from the primary market (ie, through IPO). When we talk about the buying and selling of stocks/securities we will talk about the secondary market.
 
-### What is an Stock Exchange?
+### What is a Stock Exchange?
 Exhanges refer to the exact location where the trades are being executed. 
 eg: Let's take the case of grocery stores. The term can be compared to that of a Market. But if we refer to a specific store, like Walmart, these can be compared to
 an exchange.  
@@ -134,7 +134,30 @@ Here the stock opens at a certain price, goes all the way up and come down and c
 8. Hammer  
 Here the stock opens at a certian price, goes all the way down and come up and closes just below where it opened. It will have a small red candle. A black or a white candlestick that consists of a small body near the high with a little or no upper shadow and a long lower tail. Considered a bullish pattern during a downtrend.
 9. Bearish Harami  
-Here we have a very big green candle and then a smaller red candle that opens within the body(within open and close of the candle) of the green candle. In a chart this indicatest that the up movement has exhaused. So, we expect a trend reveral ie, the stock to go down. As the name bearish suggests we have a view that the stock will go down.
+Here we have a very big green candle and then a smaller red candle that opens within the body(within open and close of the candle) of the green candle. In a chart this indicates that the up movement has exhaused. So, we expect a trend reveral ie, the stock to go down. As the name bearish suggests we have a view that the stock will go down.
 10. Bullish Harami  
-Here we have a very big red candle and then a smaller green candle that opens within the body(within open and close of the candle) of the red candle. 
+Here we have a very big red candle and then a smaller green candle that opens within the body(within open and close of the candle) of the red candle. In a chart this indicates that the down movement has exhaused (Sellers have exhausted). So, the stock will go up. As the name bullish suggests we have a view that the stock will go up. Bearish and Bullish Harami helps to time the buy/sell of stocks.
+11. Engulfing Bullish  
+Here a green candle engulfs a smaller red candle indicating the stock will go up. Consists of a small red body that is contained within the followed large green candlestick. When it appears at bottom it is interpreted as a major reversal signal.
+12. Engulfing Bearish  
+Here a red candle engulfs a smaller green candle indicating the stock will go down. Consists of a small green body that is contained within the followed large red candlestick. When it appears at top it is considered as a major reversal signal.
 
+### Trends
+Trends is something that is at the core of technical analysis. Prices tend to move in trends and history tends to repeat itself.
+A trend is just a direction. Stocks can have trends they can go in one direction. They can have an uptrend meaning it is going up. They can have a downtrend meaning it is going down. Stocks only move in three directions - up, down, and side.  
+1. UpTrends  
+Stocks don't move in a straight line, they will fluctuate. In an uptrend, every time we have a high, *the next high is higher* and every time we have a low, *the next low is higher*.
+2. DownTrends  
+In a downtrend, every time they have a high, *the next high is lower* and every time we have a low, *the next low is lower*.
+3. SideTrends  
+If the lows and highs are at the same price, the stock is moving sideways.  
+If a stock a going up in an uptrend, then it will probably be going in that direction. That's why it's said go with the trend/ the trend is your friend. Don't go against the trend.
+
+- **TrendLines**: A line we draw along the lows of a trend. It will give us the general direction of the trend weather it's up/down. Trends don't last forever. If the price of a stock breaks the trendline that we drew, then it's over it won't continue in the same direction as the trend.  
+
+- **Channels**: When drawing trendlines we draw 2 lines one on the high and one on the low of the trend and we call it a channel. The stock will move in a channel within a lower and upper trendline. We can have up channels where the stock is going up and down channels where the stock is going down. We also have side channels. Within a channel, we can buy when it's at a lower and sell when it's in the upper. Drawing channels on stock charts will help us to time the buy and sell of a stock.  
+
+- **Support and Resistance**  
+Channels and trendlines serve as support and resistance. Support is something that supports a price, supporting that it doesn't fall below a certain price. Resistance is something that the price can't go through (It can't go higher than this). The lower trendline is a support line. The upper trendline in the resistance line. When we are trading a stock in the support and resistance, we should buy on the support and sell on the resistance. Trends can be observed in any timeframe, daily, 5 minutes etc. Trends can channels will help us to decide on the entry and exit points. It has been proven that trends persist. The real reason why is because almost everyone sees the trend line and wants to buy on the support line so, place buy orders on the support line which inturn create high demand for the stock at that point and ensures it doesn't go below it. Support and resistance are caused by people buying and selling on the high and low trend lines. 
+
+- **Trend Lengths**  
