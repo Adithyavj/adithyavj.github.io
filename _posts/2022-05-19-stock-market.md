@@ -193,3 +193,13 @@ It is a very rare chart pattern. Here the price starts dropping, but then it sta
 8. Rounding Bottom  
 It looks somewhat similar to cup and handle, but doesn't likely have a reconsiliation. Once it picks up, it likely goes up higher.  
 > Only the patterns used by most people will affect the behaviour of a stock price.  
+
+### Volume  
+Technical analysis mainly deals with price and volume. If a 100 shares traded hands then the volume of the stock is 100. Volume describes the number of shares that were sold and bought. On each day we can see how many shares of a particular stock were traded. Volume is important as we need enough quantity to be traded at a price to confirm the price it's trading at is valid/correct. A price movement without enough volume is meaningless. *Volume preceeds price*. When something happens and the stock is going to move, a lot of volume will come in before the price begins to move. Before prices start to go up, a lot of people will be buying the shares meaning an increase in volume, only then the prices will start moving up as there is an increase in demand. If the prices are going up but there is very less volume, then the probability of continuation is very low.  
+
+Big moves in stock price are supported with high volume. It could either be prices going down or up. If there is a movement with less volume it could mean that there weren't many sellers to sell at a meaningful price and thus the buyer had to purchase at a higher price, thus the price wouldn't continue to go up.  
+
+- **Average Volume**  
+Average amount of shares that a company buys/sells. We usually look at the 3 month average of a stock. We look at the average since in some days it can trade at a low volume and in some days high volume. The average daily quantity of shares that have been traded for the past X period. Usualy this is calculated on the past 3 months.  
+- **Relative Volume**  
+Relative volume compares the current volume to the average volume that the stock should have at the same time of day. If the relative volume is over 1 this means the stock is experiencing more then it’s usual volume. If for example the relative volume is 4, this means the stock is experiencing 4 times it’s usual volume. To understand if the volume of a stock is high/low, we observe the relative volume of that particular stock on that day with respect to how much volume it usually trades. We cannot compare volume of one stock to that of another stock.  
