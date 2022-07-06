@@ -203,3 +203,8 @@ Big moves in stock price are supported with high volume. It could either be pric
 Average amount of shares that a company buys/sells. We usually look at the 3 month average of a stock. We look at the average since in some days it can trade at a low volume and in some days high volume. The average daily quantity of shares that have been traded for the past X period. Usualy this is calculated on the past 3 months.  
 - **Relative Volume**  
 Relative volume compares the current volume to the average volume that the stock should have at the same time of day. If the relative volume is over 1 this means the stock is experiencing more then it’s usual volume. If for example the relative volume is 4, this means the stock is experiencing 4 times it’s usual volume. To understand if the volume of a stock is high/low, we observe the relative volume of that particular stock on that day with respect to how much volume it usually trades. We cannot compare volume of one stock to that of another stock.  
+
+### Indicators: Bollinger Bands
+**Technical indicator**: Mathematical computation based on historical price and volume which aims to help forcast future price mouvement and is mostly used for entry/exit signals.  
+Bollinger bands are one of the multiple indicators that we have access to when we trade stocks. We use bollinger bands when we are running a mean reverting strategy. 
+
